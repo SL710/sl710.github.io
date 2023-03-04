@@ -20,6 +20,11 @@ section {
   padding: 2.5rem;
 }
 
+main {
+  /* 為頁面內容添加 padding-top，以便留出 navbar 的高度 */
+  padding-top: 60px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -78,10 +83,6 @@ section {
   display: none;
 }
 
-body {
-  /* 為頁面內容添加 padding-top，以便留出 navbar 的高度 */
-  padding-top: 60px;
-}
 body main section.main-area {
   background-color: withe;
   min-height: 70vh;
