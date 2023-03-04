@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,6 +47,11 @@ section {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  /* 將 navbar 固定在頁面頂部 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .topnav a {
@@ -64,7 +70,7 @@ section {
 }
 
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: rgb(33, 101, 15);
   color: white;
 }
 
@@ -72,6 +78,10 @@ section {
   display: none;
 }
 
+body {
+  /* 為頁面內容添加 padding-top，以便留出 navbar 的高度 */
+  padding-top: 60px;
+}
 body main section.main-area {
   background-color: withe;
   min-height: 70vh;

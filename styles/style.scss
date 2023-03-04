@@ -48,6 +48,12 @@ section {
 .topnav {
   overflow: hidden;
   background-color: #333;
+
+  /* 將 navbar 固定在頁面頂部 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .topnav a {
@@ -66,7 +72,7 @@ section {
 }
 
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: rgb(33, 101, 15);
   color: white;
 }
 
@@ -75,29 +81,10 @@ section {
 }
 
 body {
+  /* 為頁面內容添加 padding-top，以便留出 navbar 的高度 */
+  padding-top: 60px;
+
   header {
-    // nav {
-    //   background-color: white;
-    //   position: sticky;
-    //   z-index: 99;
-    //   top: 0;
-    //   ul {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     li {
-    //       list-style: none;
-    //       margin: 1rem;
-    //       a {
-    //         color: black;
-    //         text-decoration: none;
-    //         transition: all 0.1s ease;
-    //         &:hover {
-    //           color: rgb(158, 179, 179);
-    //         }
-    //       }
-    // }
-    // }
-    // }
   }
 
   main {
