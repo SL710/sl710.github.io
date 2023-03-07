@@ -7,3 +7,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+let currentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;

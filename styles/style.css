@@ -156,32 +156,26 @@ body main section.about-me div.pr p {
   margin-bottom: 0rem;
   margin-top: 0.5rem;
 }
-body section.resume {
+body footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+body footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body footer .container .row {
   display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
-body section.resume section.table {
-  flex: 1 1 512px;
+body footer .container .row .col-sm-12 {
+  flex-basis: 100%;
 }
-body section.resume section.picture {
-  flex: 0 1 512px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body footer .container .row .text-center {
+  text-align: center;
 }
-body section.resume section.picture div.circle {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-body section.resume section.picture div.circle:hover {
-  width: 300px;
-  height: 300px;
+body footer #copyright {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
