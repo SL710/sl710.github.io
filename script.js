@@ -8,5 +8,7 @@ function myFunction() {
   }
 }
 
-let currentYear = new Date().getFullYear();
-document.getElementById("currentYear").innerHTML = currentYear;
+window.addEventListener("load", function () {
+  let currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+});
